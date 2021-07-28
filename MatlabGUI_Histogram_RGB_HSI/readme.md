@@ -1,4 +1,4 @@
-#### MatlabGUI_Histogram
+#### Histogram_RGB_HSI
 
 ##### reference
 - การประมวลผลภาพดิจิตอลด้วย Matlab
