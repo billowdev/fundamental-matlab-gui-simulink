@@ -1,2 +1,2 @@
-# learnMatlab
-For learning about matlab &amp; digital image processing
+# Color-Model-and-Histogram
+learn about matlab
