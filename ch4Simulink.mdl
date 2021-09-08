@@ -1,12 +1,12 @@
 Model {
-  Name			  "Simulink_ImageFromWorkSpace_Intensity"
+  Name			  "ch4Simulink"
   Version		  10.1
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "1.3"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,17 +19,23 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 2
+    NumExternalFileReferences 3
     ExternalFileReference {
-      Reference		      "visionconversions/Color Space\n Conversion"
-      Path		      "Simulink_ImageFromWorkSpace_Intensity/Color Space  Conversion"
-      SID		      "3"
+      Reference		      "visiontextngfix/Draw Shapes"
+      Path		      "ch4Simulink/Draw Shapes"
+      SID		      "5"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "visionsources/Image From Workspace"
-      Path		      "Simulink_ImageFromWorkSpace_Intensity/Image From Workspace"
-      SID		      "2"
+      Path		      "ch4Simulink/Image From Workspace"
+      SID		      "1"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "visiontextngfix/Insert Text"
+      Path		      "ch4Simulink/Insert Text"
+      SID		      "4"
       Type		      "LIBRARY_BLOCK"
     }
     OrderedModelArguments   1
@@ -40,6 +46,17 @@ Model {
   NotesPlugin		  "on"
   SLCCPlugin		  "on"
   AnimationPlugin	  "on"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "$bdroot"
+      PropName		      "mdlProps"
+    }
+  }
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -53,17 +70,17 @@ Model {
   LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
-    $ObjectID		    1
+    $ObjectID		    2
     $ClassName		    "Simulink.BDWindowsInfo"
     Object {
       $PropName		      "WindowsInfo"
-      $ObjectID		      2
+      $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [534.0, 98.0, 980.0, 742.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
-	$ObjectID		3
+	$ObjectID		4
 	$ClassName		"Simulink.ModelBrowserInfo"
 	Visible			[1]
 	DockPosition		"Left"
@@ -74,26 +91,26 @@ Model {
       }
       Object {
 	$PropName		"ExplorerBarInfo"
-	$ObjectID		4
+	$ObjectID		5
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
       Object {
 	$PropName		"EditorsInfo"
-	$ObjectID		5
+	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	IsTabbed		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1094.0, 635.0]
+	Extents			[1807.0, 755.0]
 	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
-	SceneRectInView		[0.0, 0.0, 875.2, 508.0]
+	Offset			[-10.866666666666674, 18.399999999999977]
+	SceneRectInView		[-10.866666666666674, 18.399999999999977, 1445.6, 604.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		6
+	$ObjectID		7
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -110,7 +127,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAACFgD///8AAARzAAACwQAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAAD/////AAACFgD///8AAAc8AAADOQAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
       "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAMAAAABAAAAOgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAQgBvAHQAdABvAG0AAAAAAP////8AAAAAAAAAAA=="
@@ -121,18 +138,18 @@ Model {
       }
       WindowUuid	      "0b82776b-3568-4091-8b56-551a033ff4d9"
     }
-    BDUuid		    "45e7a26e-d1f1-4188-93bb-4a7f5e608bb3"
+    BDUuid		    "21ea098d-760e-45ad-9489-a0d9b43eb542"
   }
   HideAutomaticNames	  on
-  Created		  "Fri Jul 23 21:10:07 2021"
+  Created		  "Thu Jul 22 20:46:23 2021"
   Creator		  "lacak"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "lacak"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jul 28 20:58:56 2021"
-  RTWModifiedTimeStamp	  549312393
-  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  LastModifiedDate	  "Thu Jul 22 21:53:56 2021"
+  RTWModifiedTimeStamp	  548891510
+  ModelVersionFormat	  "1.%<AutoIncrement:3>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -190,14 +207,14 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Simulink_ImageFromWorkSpace_Intensity"
-    overrideMode_	    [0.0]
+    model_		    "ch4Simulink"
+    overrideMode_	    [0U]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Simulink_ImageFromWorkSpace_Intensity"
+      Cell		      "ch4Simulink"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -235,15 +252,15 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      9
       Version		      "20.0.1"
       DisabledProps	      []
       Description	      ""
       Array {
 	Type			"Handle"
-	Dimension		9
+	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -286,7 +303,7 @@ Model {
 	  ODENIntegrationMethod	  "ode3"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -328,7 +345,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -402,7 +419,7 @@ Model {
 	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -523,7 +540,7 @@ Model {
 	  ArithmeticOperatorsInVariantConditions "error"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -573,7 +590,7 @@ Model {
 	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -593,7 +610,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -628,7 +645,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
@@ -717,7 +734,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      18
 	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
@@ -807,7 +824,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
@@ -912,7 +929,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -952,22 +969,37 @@ Model {
 	  CovStopTime		  0
 	  CovMcdcMode		  "Masking"
 	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  21
+	  Version		  "20.0.1"
+	  DisabledProps		  []
+	  Description		  "HDL Coder custom configuration component"
+	  Components		  []
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
 	PropName		"Components"
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 0, 0, 0, 0 ]
+      ConfigPrmDlgPosition    [ 446, 95, 1346, 805 ]
       ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    20
+    $ObjectID		    22
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1049,8 +1081,8 @@ Model {
     }
   }
   System {
-    Name		    "Simulink_ImageFromWorkSpace_Intensity"
-    Location		    [534, 98, 1514, 840]
+    Name		    "ch4Simulink"
+    Location		    [-7, -7, 1543, 831]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1067,35 +1099,53 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "3"
+    SIDHighWatermark	    "5"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Reference
-      Name		      "Color Space\n Conversion"
-      SID		      "3"
-      Ports		      [3, 3]
-      Position		      [345, 121, 445, 179]
+      Name		      "Draw Shapes"
+      SID		      "5"
+      Ports		      [2, 1]
+      Position		      [315, 82, 420, 158]
       ZOrder		      7
-      LibraryVersion	      "1.374"
-      SourceBlock	      "visionconversions/Color Space\n Conversion"
-      SourceType	      "Color Space Conversion"
+      LibraryVersion	      "1.291"
+      SourceBlock	      "visiontextngfix/Draw Shapes"
+      SourceType	      "Draw Shapes"
       SourceProductBaseCode   "VP"
       MultiThreadCoSim	      "auto"
-      conversion	      "Obsolete"
-      conversionActive	      "R'G'B' to Y'CbCr"
-      wp_str		      "D65"
-      rec		      "Rec. 601 (SDTV)"
-      sys		      "1125/60/2:1"
-      imagePorts	      "Separate color signals"
+      shape		      "Rectangles"
+      fill		      off
+      lineWidth		      "1"
+      fillClrSource	      "Specify via dialog"
+      display		      "Black"
+      intensity		      "200"
+      color		      "[200 255 100]"
+      opacity		      "0.6"
+      viewport		      "Entire image"
+      antialiasing	      off
+      inType		      "Obsolete"
+      imagePorts	      "One multidimensional signal"
+      roundingMode	      "Floor"
+      overflowMode	      off
+      memoryMode	      "Specify word length"
+      memoryWordLength	      "16"
+      prodOutputMode	      "Binary point scaling"
+      prodOutputWordLength    "32"
+      prodOutputFracLength    "14"
+      accumMode		      "Same as product output"
+      accumWordLength	      "32"
+      accumFracLength	      "14"
+      LockScale		      off
+      memoryFracLength	      "15"
     }
     Block {
       BlockType		      Reference
       Name		      "Image From Workspace"
-      SID		      "2"
+      SID		      "1"
       Tag		      "vipblks_nd"
-      Ports		      [0, 3]
-      Position		      [45, 119, 210, 181]
-      ZOrder		      6
+      Ports		      [0, 1]
+      Position		      [65, 69, 230, 131]
+      ZOrder		      1
       LibraryVersion	      "1.349"
       SourceBlock	      "visionsources/Image From Workspace"
       SourceType	      "Image From Workspace"
@@ -1108,7 +1158,7 @@ Model {
       ContentPreviewEnabled   on
       ImageValue	      "I"
       Ts		      "inf"
-      imagePorts	      "Separate color signals"
+      imagePorts	      "One multidimensional signal"
       OutPortLabels	      "R|G|B"
       ImageDataType	      "Inherit from 'Value'"
       Signed		      on
@@ -1118,47 +1168,72 @@ Model {
       FractionLength	      "15"
     }
     Block {
+      BlockType		      Reference
+      Name		      "Insert Text"
+      SID		      "4"
+      Ports		      [1, 1]
+      Position		      [540, 87, 645, 163]
+      ZOrder		      6
+      LibraryVersion	      "1.291"
+      SourceBlock	      "visiontextngfix/Insert Text"
+      SourceType	      "Insert Text"
+      SourceProductBaseCode   "VP"
+      MultiThreadCoSim	      "auto"
+      inputType		      "Obsolete"
+      theText		      "'The Forest 112 Akkarapon Phikulsri'"
+      getTextLocFrom	      "Specify via dialog"
+      textLoc		      "[1 1]"
+      getTextColorFrom	      "Specify via dialog"
+      textColor		      "[255 0 0]"
+      getTextIntensityFrom    "Specify via dialog"
+      textIntensity	      "0"
+      getTextOpacityFrom      "Specify via dialog"
+      textOpacity	      "1.0"
+      dummyVar2		      "0"
+      dummyVar3		      "0"
+      dummyVar4		      "0"
+      imagePorts	      "One multidimensional signal"
+      isInputTransposed	      off
+      fontFace		      "LucidaSansRegular"
+      dummyVar1		      "0"
+      blockFontSize	      "30"
+      antiAliased	      on
+    }
+    Block {
       BlockType		      VideoViewer
       Name		      "Video Viewer"
-      SID		      "1"
+      SID		      "3"
       Ports		      [1]
-      Position		      [565, 115, 680, 185]
+      Position		      [530, 225, 645, 295]
       ZOrder		      5
       ScopeSpecificationString "vipscopes.VideoViewerScopeCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr.C"
       "onfiguration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sourc"
       "es','WiredSimulink',true),extmgr.Configuration('Visuals','Video',true),extmgr.Configuration('Tools','Image Navig"
-      "ation Tools',true,'Magnification',0.333333333333333),extmgr.Configuration('Tools','Image Tool',true),extmgr.Conf"
-      "iguration('Tools','Pixel Region',true)),'Version','2020a','Position',[-251 -231.8 1481.6 687.2])"
-      colormapValue	      "gray(256)"
-      FigPos		      "[-251 1094.8 1481.6 687.2]"
+      "ation Tools',true),extmgr.Configuration('Tools','Image Tool',true),extmgr.Configuration('Tools','Pixel Region',t"
+      "rue)),'Version','2020a','Position',[800.2 134.6 698.4 530.4],'VisibleAtModelOpen','on')"
+      FigPos		      "[800.2 728.4 698.4 530.4]"
     }
     Line {
-      ZOrder		      1
-      SrcBlock		      "Image From Workspace"
+      ZOrder		      10
+      SrcBlock		      "Draw Shapes"
       SrcPort		      1
-      DstBlock		      "Color Space\n Conversion"
+      Points		      [55, 0; 0, 5]
+      DstBlock		      "Insert Text"
       DstPort		      1
     }
     Line {
-      ZOrder		      2
-      SrcBlock		      "Image From Workspace"
-      SrcPort		      2
-      DstBlock		      "Color Space\n Conversion"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      3
-      SrcBlock		      "Image From Workspace"
-      SrcPort		      3
-      DstBlock		      "Color Space\n Conversion"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      5
-      SrcBlock		      "Color Space\n Conversion"
+      ZOrder		      12
+      SrcBlock		      "Insert Text"
       SrcPort		      1
-      Points		      [50, 0; 0, 20]
+      Points		      [19, 0; 0, 74; -163, 0; 0, 61]
       DstBlock		      "Video Viewer"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      17
+      SrcBlock		      "Image From Workspace"
+      SrcPort		      1
+      DstBlock		      "Draw Shapes"
       DstPort		      1
     }
   }

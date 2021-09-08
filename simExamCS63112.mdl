@@ -1,12 +1,12 @@
 Model {
-  Name			  "Simulink_showWave_Scope_Integrator_Mux"
+  Name			  "simExamCS63112"
   Version		  10.1
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.4"
+    ComputedModelVersion    "1.5"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -59,7 +59,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [384.0, 45.0, 980.0, 742.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -85,10 +85,10 @@ Model {
 	IsTabbed		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[925.0, 635.0]
+	Extents			[1638.0, 755.0]
 	ZoomFactor		[0.8]
 	Offset			[-122.1476190476186, -122.35619047619076]
-	SceneRectInView		[-122.1476190476186, -122.35619047619076, 925.0, 635.0]
+	SceneRectInView		[-122.1476190476186, -122.35619047619076, 1638.0, 755.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -105,11 +105,11 @@ Model {
 	Height			[384]
 	Minimized		"On"
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAADFAAACwfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAADFAAADOfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAlwAAAsEAAAB5AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAlwAAAzkAAAB5AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAACFgD///8AAAPKAAACwQAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAAD/////AAACFgD///8AAAaTAAADOQAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAIAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
       "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAMAAAABAAAAOgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAQgBvAHQAdABvAG0AAAAAAP////8AAAAAAAAAAA=="
@@ -120,7 +120,7 @@ Model {
       }
       WindowUuid	      "0b82776b-3568-4091-8b56-551a033ff4d9"
     }
-    BDUuid		    "12cd6c48-05db-45e4-acfc-5f8f9272ccbe"
+    BDUuid		    "8c280eaa-4283-4c20-9f65-56907636830d"
   }
   HideAutomaticNames	  on
   Created		  "Wed Jul 21 20:11:51 2021"
@@ -129,9 +129,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "lacak"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jul 24 16:47:42 2021"
-  RTWModifiedTimeStamp	  548800274
-  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  LastModifiedDate	  "Wed Aug 04 09:40:25 2021"
+  RTWModifiedTimeStamp	  549970293
+  ModelVersionFormat	  "1.%<AutoIncrement:5>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -191,12 +191,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Simulink_showWave_Scope_Integrator_Mux"
+    model_		    "simExamCS63112"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Simulink_showWave_Scope_Integrator_Mux"
+      Cell		      "simExamCS63112"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1091,8 +1091,8 @@ Model {
     }
   }
   System {
-    Name		    "Simulink_showWave_Scope_Integrator_Mux"
-    Location		    [384, 45, 1364, 787]
+    Name		    "simExamCS63112"
+    Location		    [-7, -7, 1543, 831]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1139,20 +1139,20 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('Mi"
-      "nYLimReal','-1.37065','MaxYLimReal','2.37418','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','2.37418','Leg"
+      "nYLimReal','-1.24646','MaxYLimReal','1.24913','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.24913','Leg"
       "endVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627"
       "4509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529"
       "411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647"
       "058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLa"
       "bel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Sine Wave','Integrat"
-      "or'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.37065','MaxYLimReal'"
-      ",'2.37418','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','2.37418','LegendVisibility','off','XGrid',true,'"
+      "or'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.24646','MaxYLimReal'"
+      ",'1.24913','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.24913','LegendVisibility','off','XGrid',true,'"
       "YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862"
       "74509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066"
       "6666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058"
       "8235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true)"
-      ",extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Position',[781 233.8 66"
-      "7.2 414.4])"
+      ",extmgr.Configuration('Tools','Measurements',true,'Version','2020a')),'Version','2020a','Position',[572.2 337.8 "
+      "896.8 414.4])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -1163,6 +1163,7 @@ Model {
       Ports		      [0, 1]
       Position		      [5, 21, 100, 99]
       ZOrder		      1
+      Frequency		      "2"
       SampleTime	      "0"
     }
     Line {
